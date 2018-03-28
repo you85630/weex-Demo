@@ -2641,10 +2641,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/you/Desktop/Github/weex/demo1/src/views/home.vue"
+__vue_options__.__file = "/Users/you/Desktop/Github/weex/weexDemo/src/views/home.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-489dd9e9"
+__vue_options__._scopeId = "data-v-2f65412e"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -2830,10 +2830,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/you/Desktop/Github/weex/demo1/src/components/pages/page1.vue"
+__vue_options__.__file = "/Users/you/Desktop/Github/weex/weexDemo/src/components/pages/page1.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-734d2987"
+__vue_options__._scopeId = "data-v-58606f07"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -2909,10 +2909,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/you/Desktop/Github/weex/demo1/src/components/modules/list.vue"
+__vue_options__.__file = "/Users/you/Desktop/Github/weex/weexDemo/src/components/modules/list.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-311b0874"
+__vue_options__._scopeId = "data-v-b6703374"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -3010,10 +3010,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/you/Desktop/Github/weex/demo1/src/components/pages/page2.vue"
+__vue_options__.__file = "/Users/you/Desktop/Github/weex/weexDemo/src/components/pages/page2.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-735b4108"
+__vue_options__._scopeId = "data-v-586e8688"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -3094,10 +3094,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/you/Desktop/Github/weex/demo1/src/components/pages/page3.vue"
+__vue_options__.__file = "/Users/you/Desktop/Github/weex/weexDemo/src/components/pages/page3.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-73695889"
+__vue_options__._scopeId = "data-v-587c9e09"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -3178,10 +3178,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/you/Desktop/Github/weex/demo1/src/components/pages/page4.vue"
+__vue_options__.__file = "/Users/you/Desktop/Github/weex/weexDemo/src/components/pages/page4.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-7377700a"
+__vue_options__._scopeId = "data-v-588ab58a"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -3262,10 +3262,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/you/Desktop/Github/weex/demo1/src/components/pages/page5.vue"
+__vue_options__.__file = "/Users/you/Desktop/Github/weex/weexDemo/src/components/pages/page5.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-7385878b"
+__vue_options__._scopeId = "data-v-5898cd0b"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -3346,10 +3346,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/you/Desktop/Github/weex/demo1/src/index.vue"
+__vue_options__.__file = "/Users/you/Desktop/Github/weex/weexDemo/src/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-f70e2f4e"
+__vue_options__._scopeId = "data-v-438bf2d9"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
