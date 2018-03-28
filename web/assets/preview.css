@@ -1,0 +1,146 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#preview {
+  width: 750px;
+  height: 1300px;
+  transform: scale(0.4);
+  transform-origin: top left;
+}
+.mock-phone {
+  position: relative;
+  min-width: 320px;
+  width: 320px;
+  height: 645px;
+  border: 2px solid #0088fb;
+  border-radius: 30px;
+}
+.mock-phone .inner {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  z-index: 26;
+  overflow: hidden;
+  width: 300px;
+  height: 520px;
+  border: 1px solid #0088fb;
+}
+.mock-phone .inner iframe {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.mock-phone .camera {
+  position: absolute;
+  top: 20px;
+  left: 96px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #0088fb;
+  border-radius: 10px;
+  background: #afddff;
+}
+.mock-phone .earpiece {
+  position: absolute;
+  top: 20px;
+  left: 120px;
+  width: 70px;
+  height: 8px;
+  border: 1px solid #0088fb;
+  border-radius: 8px;
+  background: #afddff;
+}
+.mock-phone .home-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #0088fb;
+  border-radius: 50px;
+  background: #afddff;
+}
+
+.header {
+  flex-grow: 0;
+  height: 100px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 750px;
+  max-width: 800px;
+  width: 55%;
+}
+.main .qrcode-box {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+}
+.qrcode > img {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+}
+.qrcode-tips {
+  margin-top: 20px;
+  text-align: center;
+}
+.qrcode-tips a,
+.qrcode-tips a:link {
+  color: #00b4ff;
+  text-decoration: none;
+}
+.qrcode-tips a:hover,
+.qrcode-tips a:active {
+  color: #238fff;
+}
+.pages-box {
+  overflow-y: auto;
+  max-height: 330px;
+}
+.pages-box .page-item {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #717171;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all .2s ease;
+}
+.pages-box .page-item:hover {
+  border-color: #0088fb;
+  background: #0088fb;
+  color: #fff;
+}
+.pages-box .page-item.active {
+  border-color: #0088fb;
+  background: #0088fb;
+  color: #fff;
+}
