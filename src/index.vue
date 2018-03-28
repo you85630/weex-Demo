@@ -12,13 +12,8 @@ export default {
 
 <style scoped>
 .wrapper{
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
+  width: 750px;
+  background-color: #f2f2f2;
   font-size: 0;
-}
-* {
-  margin:0;
-  padding:0;
 }
 </style>

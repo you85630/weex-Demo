@@ -1,0 +1,32 @@
+<template>
+  <div class="tips-list">
+    <text class="tips-title">什么是小思成长档案？</text>
+    <text class="tips-text">在默认情况下，触发loadmore事件后，如果列表中内容没有发生变更，则下一次滚动到列表末尾时将不会再次触发loadmore事件，你可以通过调用resetLoadmore()方法来打破这一限制，调用该方法后，下一次滚动到列表末尾时将强制触发loadmore。</text>
+  <text class="tips-text">每一位使用小思一卡通的孩子都拥有一个云端的独立帐户，这个帐户是一本高科技的成长日记，忠实记录着孩子点点滴滴的成长经历数据。小思学院记录孩子在课程学习，课外阅读、艺术素养时相关的成长印记；小思徽章记录教师对孩子日常在校行为表现的评价；小思万里行记录孩子的社会实践足迹。家长通过微信绑定小思一卡通，可以即时收到孩子的精彩表现提醒，查阅孩子成长档案，了解更多针对孩子个性发展的教育资源。让您可以更加全面地了解孩子的发展，发现独一无二的他/她</text>
+  </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style scoped>
+.tips-list {
+  padding: 10px 20px;
+  width: 750px;
+}
+.tips-title {
+  display: block;
+  margin: 10px 0;
+  color: #666;
+  font-size: 30px;
+}
+.tips-text {
+  display: block;
+  color: #888;
+  font-size: 26px;
+}
+
+</style>

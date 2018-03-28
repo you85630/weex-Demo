@@ -1,15 +1,20 @@
 <template>
   <div class="page">
-    <text class="name">page1</text>
-    <my-list></my-list>
+    <top-nav></top-nav>
+    <psy-list></psy-list>
+    <tips-list></tips-list>
   </div>
 </template>
 
 <script>
-import myList from 'components/modules/list'
+import topNav from 'components/modules/topnav'
+import psyList from 'components/modules/psylist'
+import tipsList from 'components/modules/tipslist'
 export default {
   components: {
-    myList
+    topNav,
+    psyList,
+    tipsList
   }
 }
 </script>

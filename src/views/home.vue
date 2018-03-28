@@ -1,15 +1,15 @@
 <template>
-  <div class="home">
+  <scroller class="home">
     <div class="top-main">
       <router-view/>
     </div>
     <div class="bottom-nav">
       <div v-for="(li, index) in navList" :key="index" class="nav" :class="[nowInx===index?'active':'']"  @click="jump(index)">
-        <image class="icon" :src="li.icon"></image>
+        <image class="icon" :src="li.icon"/>
         <text class="title">{{li.title}}</text>
       </div>
     </div>
-  </div>
+  </scroller>
 </template>
 
 <script>
@@ -52,10 +52,11 @@ export default {
 
 <style scoped>
 .home{
-  width: 100%;
-  height: 100%;
+  position: relative;
+  width: 750px;
 }
 .top-main{
+  padding-bottom: 115px;
   min-height: 100%;
   width: 100%;
 }
@@ -63,6 +64,7 @@ export default {
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 9999;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
