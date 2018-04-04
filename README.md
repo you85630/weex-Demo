@@ -37,3 +37,5 @@ Packaging html5 project into `web/build` folder.
 
 Starts the test runner.
 # weexDemo
+### weex platform add ios
+### weex platform add android
