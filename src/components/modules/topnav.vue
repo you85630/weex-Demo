@@ -1,17 +1,17 @@
 <template>
   <div class="top-cut">
     <div class="cut-left">
-      <image class="cut" src="http://osc94pt0z.bkt.clouddn.com/round_transfer_fill.png"/>
+      <text  class="awesomeFont cut">&#xf0ec;</text>
       <text class="cut-name">切换学生</text>
     </div>
     <div class="cut-middle">
       <div class="middle-li">
-        <image class="icon" src="http://osc94pt0z.bkt.clouddn.com/round_people_fill.png"/>
+        <text class="awesomeFont icon">&#xf2be;</text>
         <text class="title">学生项目：</text>
         <text class="text">{{user.name}}</text>
       </div>
       <div class="middle-li">
-        <image class="icon" src="http://osc94pt0z.bkt.clouddn.com/round_text_fill.png"/>
+        <text class="awesomeFont icon">&#xf2bc;</text>
         <text class="title">一卡通号：</text>
         <text class="text">{{user.number}}</text>
       </div>
@@ -36,8 +36,11 @@ export default {
 </script>
 
 <style scoped>
+.awesomeFont{
+  font-family:awesomeFont
+}
 .top-cut{
-  align-items: flex-end;
+  display: flex;
   flex-direction: row;
   padding: 20px;
   width: 750px;
@@ -55,11 +58,16 @@ export default {
   border-left-width: 2px;
   border-left-style: solid;
   border-left-color: #eee;
+  flex-direction: column;
+  justify-content:space-between;
 }
-.cut-right{}
+.cut-right{
+  flex-direction: column;
+  justify-content: flex-end;
+}
 .cut{
-  width: 45px;
-  height: 45px;
+  color:#3c9ffc;
+  font-size: 60px;
 }
 .cut-name{
   color:#3c9ffc;
@@ -70,9 +78,9 @@ export default {
   flex-direction: row;
 }
 .icon{
-  margin-right: 6px;
-  width: 36px;
-  height: 36px;
+  margin-right: 10px;
+  font-size: 34px;
+  color: #999;
 }
 .title{
   color: #999;
