@@ -23,14 +23,12 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-  data () {
-    return {
-      user: {
-        name: '思来氏',
-        number: '1234567890'
-      }
-    }
+  computed: {
+    ...mapGetters([
+      'user'
+    ])
   }
 }
 </script>
