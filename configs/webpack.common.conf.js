@@ -115,9 +115,7 @@ const webConfig = {
       '.json'
     ],
     alias: {
-      src: helper.resolve('src'),
-      components: helper.resolve('src/components'),
-      views: helper.resolve('src/views')
+      '@': helper.resolve('src')
     }
   },
   /*
@@ -204,9 +202,7 @@ const weexConfig = {
       '.json'
     ],
     alias: {
-      src: helper.resolve('src'),
-      components: helper.resolve('src/components'),
-      views: helper.resolve('src/views')
+      '@': helper.resolve('src')
     }
   },
   /*

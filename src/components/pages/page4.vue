@@ -1,15 +1,3 @@
 <template>
-  <div class="page">
-    <text class="name">page4</text>
-  </div>
+  <text>我的主页</text>
 </template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style scoped>
-
-</style>

@@ -1,12 +1,11 @@
 /* global Vue */
 import Router from 'vue-router'
-
-import home from 'views/home'
-import page1 from 'components/pages/page1'
-import page2 from 'components/pages/page2'
-import page3 from 'components/pages/page3'
-import page4 from 'components/pages/page4'
-import page5 from 'components/pages/page5'
+import home from '@/views/home'
+import page1 from '@/components/pages/page1'
+import page2 from '@/components/pages/page2'
+import page3 from '@/components/pages/page3'
+import page4 from '@/components/pages/page4'
+import page5 from '@/components/pages/page5'
 
 Vue.use(Router)
 

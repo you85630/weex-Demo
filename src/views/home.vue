@@ -1,15 +1,15 @@
 <template>
-  <scroller class="home">
-    <div class="top-main">
+  <div class="home">
+    <scroller class="top-main">
       <router-view/>
-    </div>
+    </scroller>
     <div class="bottom-nav">
       <div v-for="(li, index) in navList" :key="index" class="nav" :class="[nowInx===index?'active':'']"  @click="jump(index)">
         <image class="icon" :src="li.icon"/>
         <text class="title">{{li.title}}</text>
       </div>
     </div>
-  </scroller>
+  </div>
 </template>
 
 <script>
@@ -33,10 +33,6 @@ export default {
         title: '页面4',
         linkto: '/home/page4',
         icon: '//img.alicdn.com/tfs/TB1D4RzQFXXXXcoXpXXXXXXXXXX-45-45.png'
-      }, {
-        title: '页面5',
-        linkto: '/home/page5',
-        icon: '//gw.alicdn.com/tfs/TB1N1.6OVXXXXXqaXXXXXXXXXXX-45-45.png'
       }]
     }
   },
@@ -52,41 +48,46 @@ export default {
 
 <style scoped>
 .home{
-  position: relative;
-  width: 750px;
+  position: absolute;
+  top:0;
+  bottom:0;
+  width:750px;
 }
 .top-main{
-  padding-bottom: 115px;
-  min-height: 100%;
-  width: 100%;
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:120px;
+  left:0;
+  width: 750px;;
 }
 .bottom-nav{
-  position: fixed;
-  bottom: 0;
+  position:fixed;
+  right: 0;
+  bottom:0;
   left: 0;
-  z-index: 9999;
-  align-items: center;
   flex-direction: row;
   justify-content: space-around;
+  width:750px;
+  height: 120px;
   background-color: #60B3F9;
 }
-  .nav{
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 150px;
-  }
-  .icon{
-    width: 45px;
-    height: 45px;
-  }
-  .title{
-    margin-top: 10px;
-    color: #fff;
-    font-size: 28px;
-  }
-  .active{
-    background-color: #8FC5F8;
-    transition: all 0.2s ease-in-out;
-  }
+.active{
+  background-color: #8FC5F8;
+  transition: all 0.2s ease-in-out;
+}
+.nav{
+  align-items: center;
+  justify-content: center;
+  width: 187.5px;
+}
+.icon {
+  width: 45px;
+  height: 45px;
+}
+.title {
+  margin-top: 10px;
+  color: #FFF;
+  font-size: 28px;
+}
 </style>

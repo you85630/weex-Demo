@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import topNav from 'components/modules/topnav'
-import psyList from 'components/modules/psylist'
-import tipsList from 'components/modules/tipslist'
+import topNav from '../../components/modules/topnav'
+import psyList from '../../components/modules/psylist'
+import tipsList from '../../components/modules/tipslist'
 export default {
   components: {
     topNav,

@@ -1,14 +1,6 @@
 <template>
-  <div class="page">
-    <text class="name">page2</text>
-  </div>
+  <text>特别推荐</text>
 </template>
-
-<script>
-export default {
-
-}
-</script>
 
 <style scoped>
 
