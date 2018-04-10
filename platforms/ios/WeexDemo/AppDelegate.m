@@ -24,25 +24,25 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    
+
     [WeexSDKManager setup];
-    
+
     [self.window makeKeyAndVisible];
-    
+
     // Override point for customization after application launch.
-    [self startSplashScreen];
-    
+    // [self startSplashScreen];
+
     return YES;
 }
 
-#pragma mark 
+#pragma mark
 #pragma mark animation when startup
 
 - (void)startSplashScreen
 {
     UIView* splashView = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     splashView.backgroundColor = WEEX_COLOR;
-    
+
     UIImageView *iconImageView = [UIImageView new];
     UIImage *icon = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"weex-icon" ofType:@"png"]];
     if ([icon respondsToSelector:@selector(imageWithRenderingMode:)]) {
@@ -55,13 +55,13 @@
     iconImageView.contentMode = UIViewContentModeScaleAspectFit;
     iconImageView.center = splashView.center;
     [splashView addSubview:iconImageView];
-    
+
     [self.window addSubview:splashView];
-    
+
     float animationDuration = 1.4;
     CGFloat shrinkDuration = animationDuration * 0.3;
     CGFloat growDuration = animationDuration * 0.7;
-    
+
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
         [UIView animateWithDuration:shrinkDuration delay:1.0 usingSpringWithDamping:0.7f initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             CGAffineTransform scaleTransform = CGAffineTransformMakeScale(0.75, 0.75);
