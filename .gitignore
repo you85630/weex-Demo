@@ -14,3 +14,4 @@ package-lock.json*
 *.sln
 .temp/
 dist/
+platforms/
