@@ -9,11 +9,13 @@ You can also scan the QR code using weex playground to preview weex page on nati
 
 Open the code compilation task in watch mode.
 
+### weex platform add ios
 ### npm run ios
 
 (Mac only, requires Xcode)
 Starts the development server and loads your app in an iOS simulator.
 
+### weex platform add android
 ### npm run android
 
 (Requires Android build tools)
@@ -37,5 +39,3 @@ Packaging html5 project into `web/build` folder.
 
 Starts the test runner.
 # weexDemo
-### weex platform add ios
-### weex platform add android
