@@ -2,8 +2,8 @@
   "AppName": "WeexDemo",
   "Version": "0.1",
   "BuildVersion": "0.1.0",
-  "AppId": "com.alibaba.weex",
-  "CodeSign": "",
-  "Profile": "",
+  "AppId": "com.psylife.you",
+  "CodeSign": "iPhone Developer: yogi you (35HV7D7K7L)",
+  "Profile": "bacc00e9-2b44-4620-9b47-ded94b14b2cb",
   "WeexBundle": "index.js"
 }
