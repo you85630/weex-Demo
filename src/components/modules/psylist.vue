@@ -1,6 +1,6 @@
 <template>
   <div class="psy-list">
-    <div class="list" v-for="li in list" :key="li.index">
+    <div class="list" v-for="li in data" :key="li.index">
       <div class="cover-box">
         <image class="cover" mode="aspectFill" :src="li.cover" v-if="li.state" />
         <image class="cover cover-none" mode="aspectFill" :src="li.cover" v-else />
@@ -15,48 +15,7 @@
 
 <script>
 export default {
-  data () {
-    return {
-      list: [
-        {
-          linkto: '',
-          cover: 'http://static.silaishi.com/wechat/wximgs/report-1.png',
-          name: '小思学院·阅读',
-          state: true
-        },
-        {
-          linkto: '',
-          cover: 'http://static.silaishi.com/wechat/wximgs/report-5.png',
-          name: '小思学院·课程',
-          state: true
-        },
-        {
-          linkto: '',
-          cover: 'http://static.silaishi.com/wechat/wximgs/report-2.png',
-          name: '小思学院·艺术',
-          state: true
-        },
-        {
-          linkto: '',
-          cover: 'http://static.silaishi.com/wechat/wximgs/report-3.png',
-          name: '小思徽章',
-          state: true
-        },
-        {
-          linkto: '',
-          cover: 'http://static.silaishi.com/wechat/wximgs/report-4.png',
-          name: '小思万里行',
-          state: false
-        },
-        {
-          linkto: '',
-          cover: 'http://static.silaishi.com/wechat/wximgs/report-6.png',
-          name: '期末学科评价',
-          state: true
-        }
-      ]
-    }
-  }
+  props: ['data']
 }
 </script>
 

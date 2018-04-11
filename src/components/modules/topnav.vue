@@ -8,12 +8,12 @@
       <div class="middle-li">
         <text class="awesomeFont icon">&#xf2be;</text>
         <text class="title">学生项目：</text>
-        <text class="text">{{user.name}}</text>
+        <text class="text">{{data.name}}</text>
       </div>
       <div class="middle-li">
         <text class="awesomeFont icon">&#xf2bc;</text>
         <text class="title">一卡通号：</text>
-        <text class="text">{{user.number}}</text>
+        <text class="text">{{data.number}}</text>
       </div>
     </div>
     <div class="cut-right">
@@ -23,13 +23,8 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 export default {
-  computed: {
-    ...mapGetters([
-      'user'
-    ])
-  }
+  props: ['data']
 }
 </script>
 
