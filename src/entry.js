@@ -1,7 +1,7 @@
 /* global Vue */
 
 /* weex initialized here, please do not move this line */
-const createStore = require('@/store')
+const createStore = require('@/vuex')
 const store = createStore()
 
 const router = require('./router')
