@@ -1,9 +1,9 @@
-/* eslint-disable */
-import Vue from 'vue'
+// import Vue from 'vue'
 import Vuex from 'vuex'
+// eslint-disable-next-line
 Vue.use(Vuex)
 
-module.exports = function store (){
+module.exports = function store () {
   return new Vuex.Store({
     state: {
       user: {
