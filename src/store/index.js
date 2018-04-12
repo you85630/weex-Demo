@@ -2,7 +2,7 @@
 import Vuex from 'vuex'
 Vue.use(Vuex)
 
-module.exports = function createStore () {
+module.exports = function () {
   return new Vuex.Store({
     state: {
       user: {
