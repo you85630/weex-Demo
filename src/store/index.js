@@ -1,6 +1,5 @@
-import Vue from 'vue'
+/* global Vue */
 import Vuex from 'vuex'
-// eslint-disable-next-line
 Vue.use(Vuex)
 
 module.exports = function createStore () {

@@ -1,9 +1,9 @@
 /* global Vue */
 
 /* weex initialized here, please do not move this line */
-const createStore = require('@/vuex')
-const store = createStore()
 const router = require('./router')
+const createStore = require('@/store')
+const store = createStore()
 const App = require('@/index.vue')
 /* eslint-disable no-new */
 new Vue(
@@ -16,3 +16,4 @@ new Vue(
     App
   )
 )
+router.push('/')
