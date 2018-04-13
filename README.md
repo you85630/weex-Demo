@@ -39,3 +39,5 @@ Packaging html5 project into `web/build` folder.
 
 Starts the test runner.
 # weexDemo
+
+vuex在weex中使用出现问题，暂时没有找到解决方法
