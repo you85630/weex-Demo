@@ -39,3 +39,4 @@ Packaging html5 project into `web/build` folder.
 
 Starts the test runner.
 # weexDemo
+这里备注下以上都是修改部分
