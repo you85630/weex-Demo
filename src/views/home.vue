@@ -42,9 +42,6 @@ export default {
       let link = this.navList[key].linkto
       this.$router.push(link)
     }
-  },
-  created () {
-    this.$store.default.commit('getData')
   }
 }
 </script>

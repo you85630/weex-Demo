@@ -1,25 +1,31 @@
 const baseURL = 'https://www.easy-mock.com/mock/5ad58d46beecc618795e58ff/weexDemo'
+
+const headers = { 'Content-Type': 'application/x-www-form-urlencoded' }
 // eslint-disable-next-line
 const stream = weex.requireModule('stream')
 
 export default {
-  get (URL, params) {
+  get (URL, callback) {
     return stream.fetch(
       {
         method: 'GET',
         url: baseURL + URL,
-        type: 'json'
+        type: 'json',
+        timeout: 5000,
+        headers
       },
-      params
+      callback
     )
   },
-  post (URL, data, params) {
+  post (URL, data, callback) {
     return stream.fetch(
       {
         method: 'POST',
         url: baseURL + URL,
         data,
         type: 'json',
+        timeout: 5000,
+        headers,
         transformRequest: [
           function (data) {
             let ret = ''
@@ -30,7 +36,7 @@ export default {
           }
         ]
       },
-      params
+      callback
     )
   }
 }

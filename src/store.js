@@ -1,52 +1,14 @@
 /* global Vue */
 import Vuex from 'vuex'
-import mutations from '@/store/mutations.js'
+import api from '@/store/api'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
     user: {},
-    list: [
-      {
-        linkto: '',
-        cover: 'http://static.silaishi.com/wechat/wximgs/report-1.png',
-        name: '小思学院·阅读',
-        state: true
-      },
-      {
-        linkto: '',
-        cover: 'http://static.silaishi.com/wechat/wximgs/report-5.png',
-        name: '小思学院·课程',
-        state: true
-      },
-      {
-        linkto: '',
-        cover: 'http://static.silaishi.com/wechat/wximgs/report-2.png',
-        name: '小思学院·艺术',
-        state: true
-      },
-      {
-        linkto: '',
-        cover: 'http://static.silaishi.com/wechat/wximgs/report-3.png',
-        name: '小思徽章',
-        state: true
-      },
-      {
-        linkto: '',
-        cover: 'http://static.silaishi.com/wechat/wximgs/report-4.png',
-        name: '小思万里行',
-        state: false
-      },
-      {
-        linkto: '',
-        cover: 'http://static.silaishi.com/wechat/wximgs/report-6.png',
-        name: '期末学科评价',
-        state: true
-      }
-    ],
-    tips:
-      '每一位使用小思一卡通的孩子都拥有一个云端的独立帐户，这个帐户是一本高科技的成长日记，忠实记录着孩子点点滴滴的成长经历数据。小思学院记录孩子在课程学习，课外阅读、艺术素养时相关的成长印记；小思徽章记录教师对孩子日常在校行为表现的评价；小思万里行记录孩子的社会实践足迹。家长通过微信绑定小思一卡通，可以即时收到孩子的精彩表现提醒，查阅孩子成长档案，了解更多针对孩子个性发展的教育资源。让您可以更加全面地了解孩子的发展，发现独一无二的他/她'
+    list: [],
+    tips: ''
   },
   getters: {
     user: (state) => state.user,
@@ -55,7 +17,18 @@ export default new Vuex.Store({
   },
   actions: {
     // 获取数据
-    getData: ({ commit }) => commit('getData')
+    getData: ({ commit }, state) => commit('getData', state)
   },
-  mutations
+  mutations: {
+    getData: (state) => {
+      // 用户信息
+      api.get('/userInfo', (res) => {
+        if (res.ok) {
+          state.user = res.data.user
+          state.list = res.data.list
+          state.tips = res.data.tips
+        }
+      })
+    }
+  }
 })

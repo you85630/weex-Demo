@@ -17,12 +17,19 @@ export default {
     psyList,
     tipsList
   },
-  data () {
-    return {
-      user: this.$store.default.getters.user,
-      list: this.$store.default.getters.list,
-      tips: this.$store.default.getters.tips
+  computed: {
+    'user': function () {
+      return this.$store.default.getters.user
+    },
+    'list': function () {
+      return this.$store.default.getters.list
+    },
+    'tips': function () {
+      return this.$store.default.getters.tips
     }
+  },
+  created () {
+    this.$store.default.commit('getData')
   }
 }
 </script>
