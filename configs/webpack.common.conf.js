@@ -42,8 +42,10 @@ const getRouterFileContent = (source) => {
 const getEntryFile = () => {
   const entryFile = path.join(vueWebTemp, config.entryFilePath)
   const routerFile = path.join(vueWebTemp, config.routerFilePath)
+  const storeFile = path.join(vueWebTemp, config.storeFilePath)
   fs.outputFileSync(entryFile, getEntryFileContent(helper.root(config.entryFilePath), routerFile))
   fs.outputFileSync(routerFile, getRouterFileContent(helper.root(config.routerFilePath)))
+  fs.outputFileSync(storeFile, getRouterFileContent(helper.root(config.storeFilePath)))
   return {
     index: entryFile
   }
@@ -174,6 +176,11 @@ const webConfig = {
             })
           }
         ]
+      },
+      {
+        test: /\.scss$/,
+        loader: 'scss!sass',
+        exclude: /node_modules/
       }
     ])
   },
@@ -228,6 +235,11 @@ const weexConfig = {
             options: vueLoaderConfig({ useVue: false })
           }
         ]
+      },
+      {
+        test: /\.scss$/,
+        loader: 'scss!sass',
+        exclude: /node_modules/
       }
     ]
   },

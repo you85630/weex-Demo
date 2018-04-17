@@ -2,7 +2,7 @@
 
 /* weex initialized here, please do not move this line */
 const router = require('./router')
-const store = require('@/store')
+const store = require('./store')
 const App = require('@/index.vue')
 /* eslint-disable no-new */
 new Vue(
