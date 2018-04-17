@@ -179,7 +179,7 @@ const webConfig = {
       },
       {
         test: /\.scss$/,
-        loader: 'scss!sass',
+        loader: 'css!sass',
         exclude: /node_modules/
       }
     ])
@@ -238,7 +238,7 @@ const weexConfig = {
       },
       {
         test: /\.scss$/,
-        loader: 'scss!sass',
+        loader: 'css!sass',
         exclude: /node_modules/
       }
     ]

@@ -77,11 +77,11 @@ const config = {
     /**
      * Source Maps
      */
-    productionSourceMap: false,
+    productionSourceMap: true,
     // https://webpack.js.org/configuration/devtool/#production
     devtool: '#source-map',
-    cssSourceMap: false,
-    productionSourceMap: false
+    cssSourceMap: true,
+    productionSourceMap: true
   },
   nodeConfiguration: {
     global: false,
