@@ -19,16 +19,10 @@ export default {
   },
   data () {
     return {
-      user: '',
-      list: '',
-      tips: ''
+      user: this.$store.default.getters.user,
+      list: this.$store.default.getters.list,
+      tips: this.$store.default.getters.tips
     }
-  },
-  created () {
-    let getters = this.$store.default.getters
-    this.user = getters.user
-    this.list = getters.list
-    this.tips = getters.tips
   }
 }
 </script>
