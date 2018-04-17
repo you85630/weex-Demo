@@ -44,9 +44,7 @@ export default {
     }
   },
   created () {
-    console.log(this.$store.default)
-
-    this.$store.dispatch('getData')
+    this.$store.default.commit('getData')
   }
 }
 </script>

@@ -1,10 +1,10 @@
 import api from '@/store/api'
 
 export default {
-  getData: () => {
+  getData: (state) => {
     // 用户信息
-    api.get('/userInfo').then(function (res) {
-      console.log(res)
+    api.get('/userInfo', (res) => {
+      state.user = res.data.user
     })
   }
 }
