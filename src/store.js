@@ -1,13 +1,12 @@
 /* global Vue */
 import Vuex from 'vuex'
+import mutations from '@/store/mutations.js'
+
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    user: {
-      name: '思来氏',
-      number: '1234567890'
-    },
+    user: {},
     list: [
       {
         linkto: '',
@@ -53,5 +52,10 @@ export default new Vuex.Store({
     user: (state) => state.user,
     list: (state) => state.list,
     tips: (state) => state.tips
-  }
+  },
+  actions: {
+    // 获取数据
+    getData: ({ commit }) => commit('getData')
+  },
+  mutations
 })
