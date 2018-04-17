@@ -1,4 +1,4 @@
-const BASE_URL = ''
+const baseURL = ''
 // eslint-disable-next-line
 const stream = weex.requireModule('stream')
 
@@ -7,7 +7,7 @@ export default {
     return stream
       .fetch({
         method: 'GET',
-        url: BASE_URL + URL,
+        url: baseURL + URL,
         params,
         type: 'json'
       })
@@ -19,7 +19,7 @@ export default {
     return stream
       .fetch({
         method: 'POST',
-        url: BASE_URL + URL,
+        url: baseURL + URL,
         data,
         type: 'json',
         transformRequest: [
