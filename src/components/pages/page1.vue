@@ -11,19 +11,24 @@ import topNav from '../../components/modules/topnav'
 import psyList from '../../components/modules/psylist'
 import tipsList from '../../components/modules/tipslist'
 
-import { mapGetters } from 'vuex'
 export default {
   components: {
     topNav,
     psyList,
     tipsList
   },
-  computed: {
-    ...mapGetters([
-      'user',
-      'list',
-      'tips'
-    ])
+  data () {
+    return {
+      user: '',
+      list: '',
+      tips: ''
+    }
+  },
+  created () {
+    let getters = this.$store.default.getters
+    this.user = getters.user
+    this.list = getters.list
+    this.tips = getters.tips
   }
 }
 </script>
