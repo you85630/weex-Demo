@@ -1,5 +1,11 @@
 {
-  "ios": [],
+  "ios": [
+    {
+      "type": "pod",
+      "name": "WeexNatCamera",
+      "version": "1.0.0"
+    }
+  ],
   "web": [],
   "android": []
 }
