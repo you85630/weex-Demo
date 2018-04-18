@@ -9,6 +9,11 @@
       "type": "pod",
       "name": "WeexNatMediaImage",
       "version": "1.0.1"
+    },
+    {
+      "type": "pod",
+      "name": "WeexNatGeolocation",
+      "version": "1.0.1"
     }
   ],
   "web": [],
