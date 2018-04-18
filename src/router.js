@@ -13,7 +13,7 @@ module.exports = new Router({
   routes: [
     {
       path: '/',
-      redirect: '/home/page1'
+      redirect: '/home/page2'
     },
     {
       path: '/home',

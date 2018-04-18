@@ -16,7 +16,7 @@
 export default {
   data () {
     return {
-      nowInx: 0,
+      nowInx: 1,
       navList: [{
         title: '页面1',
         linkto: '/home/page1',
@@ -59,7 +59,7 @@ export default {
   right:0;
   bottom:120px;
   left:0;
-  width: 750px;;
+  width: 750px;
 }
 .bottom-nav{
   position:fixed;
