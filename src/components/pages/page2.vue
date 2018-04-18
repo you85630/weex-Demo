@@ -37,7 +37,6 @@ export default {
         Nat.toast('暂无图片，请先拍照')
         return
       }
-
       Nat.image.preview(this.path)
     }
   }
