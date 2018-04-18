@@ -26,18 +26,23 @@ export default {
           Nat.toast('[ERROR] ' + JSON.stringify(err))
           return
         }
-        console.log(1)
         Nat.toast(JSON.stringify(ret, null, 2))
         this.path = ret.path
       })
     },
 
     preview () {
-      if (!this.path) {
-        Nat.toast('暂无图片，请先拍照')
-        return
-      }
-      Nat.image.preview(this.path)
+      Nat.image.pick({
+        showCamera: true
+      }, (err, ret) => {
+        if (err) {
+          Nat.toast('[ERROR] ' + JSON.stringify(err))
+          return
+        }
+
+        Nat.toast(JSON.stringify(ret))
+        this.path = ret.paths[0]
+      })
     }
   }
 
