@@ -4,10 +4,6 @@
       <image class="btn-bg" src="https://gw.alicdn.com/tfs/TB1qnO0kLDH8KJjy1XcXXcpdXXa-900-320.png"/>
       <text class="btn-text">点击拍照</text>
     </div>
-    <div class="btn" @click="preview">
-      <image class="btn-bg" src="https://gw.alicdn.com/tfs/TB1qnO0kLDH8KJjy1XcXXcpdXXa-900-320.png"/>
-      <text class="btn-text">点击展示图片</text>
-    </div>
   </div>
 </template>
 
@@ -28,20 +24,6 @@ export default {
         }
         Nat.toast(JSON.stringify(ret, null, 2))
         this.path = ret.path
-      })
-    },
-
-    preview () {
-      Nat.image.pick({
-        showCamera: true
-      }, (err, ret) => {
-        if (err) {
-          Nat.toast('[ERROR] ' + JSON.stringify(err))
-          return
-        }
-
-        Nat.toast(JSON.stringify(ret))
-        this.path = ret.paths[0]
       })
     }
   }

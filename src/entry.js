@@ -5,14 +5,5 @@ const router = require('./router')
 const store = require('./store')
 const App = require('@/index.vue')
 /* eslint-disable no-new */
-new Vue(
-  Vue.util.extend(
-    {
-      el: '#root',
-      router,
-      store
-    },
-    App
-  )
-)
+new Vue(Vue.util.extend({ el: '#root', router, store }, App))
 router.push('/')
