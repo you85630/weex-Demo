@@ -16,7 +16,7 @@
 export default {
   data () {
     return {
-      nowInx: 1,
+      nowInx: 0,
       navList: [{
         title: '页面1',
         linkto: '/home/page1',
