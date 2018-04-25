@@ -16,24 +16,12 @@
 export default {
   data () {
     return {
-      nowInx: 0,
-      navList: [{
-        title: '页面1',
-        linkto: '/home/page1',
-        icon: '//gw.alicdn.com/tfs/TB19YESOVXXXXaNaXXXXXXXXXXX-45-45.png'
-      }, {
-        title: '页面2',
-        linkto: '/home/page2',
-        icon: '//gw.alicdn.com/tfs/TB1I2E9OVXXXXbFXVXXXXXXXXXX-45-45.png'
-      }, {
-        title: '页面3',
-        linkto: '/home/page3',
-        icon: '//gw.alicdn.com/tfs/TB1gUhyPXXXXXX5XXXXXXXXXXXX-45-45.png'
-      }, {
-        title: '页面4',
-        linkto: '/home/page4',
-        icon: '//img.alicdn.com/tfs/TB1D4RzQFXXXXcoXpXXXXXXXXXX-45-45.png'
-      }]
+      nowInx: 0
+    }
+  },
+  computed: {
+    'navList': function () {
+      return this.$store.default.getters.navList
     }
   },
   methods: {
