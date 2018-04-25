@@ -8,7 +8,7 @@ const config = {
   pluginFilePath: 'plugins/plugins.js',
   // router
   routerFilePath: 'router.js',
-  // router
+  // vuex
   storeFilePath: 'store.js',
   // common
   templateDir: '.temp',

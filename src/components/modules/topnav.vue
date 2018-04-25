@@ -35,6 +35,7 @@ export default {
 .top-cut{
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
   padding: 20px;
   width: 750px;
   background-color: #fff;
