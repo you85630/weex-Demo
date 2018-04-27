@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <scroller class="top-main">
+    <div class="top-main">
       <router-view/>
-    </scroller>
+    </div>
     <div class="bottom-nav">
       <div v-for="(li, index) in navList" :key="index" class="nav" :class="[nowInx===index?'active':'']"  @click="jump(index)">
         <image class="icon" :src="li.icon"/>

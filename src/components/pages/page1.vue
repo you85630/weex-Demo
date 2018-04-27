@@ -1,9 +1,9 @@
 <template>
-  <div class="page">
+  <scroller class="page">
     <top-nav :data="user"></top-nav>
     <psy-list :data="list"></psy-list>
     <tips-list :data="tips"></tips-list>
-  </div>
+  </scroller>
 </template>
 
 <script>
