@@ -4,8 +4,8 @@
       <router-view/>
     </div>
     <div class="bottom-nav">
-      <div v-for="(li, index) in navList" :key="index" class="nav" :class="[nowInx===index?'active':'']"  @click="jump(index)">
-        <image class="icon" :src="li.icon"/>
+      <div v-for="(li, index) in navList" :key="index" class="nav" :class="[nowInx===index?'active':'']" @click="jump(index)">
+        <image class="icon" :src="li.icon" />
         <text class="title">{{li.title}}</text>
       </div>
     </div>
@@ -20,7 +20,7 @@ export default {
     }
   },
   computed: {
-    'navList': function () {
+    navList: function () {
       return this.$store.default.getters.navList
     }
   },
@@ -35,36 +35,36 @@ export default {
 </script>
 
 <style scoped>
-.home{
+.home {
   position: absolute;
-  top:0;
-  bottom:0;
-  width:750px;
-}
-.top-main{
-  position: fixed;
-  top:0;
-  right:0;
-  bottom:120px;
-  left:0;
+  top: 0;
+  bottom: 0;
   width: 750px;
 }
-.bottom-nav{
-  position:fixed;
+.top-main {
+  position: fixed;
+  top: 0;
   right: 0;
-  bottom:0;
+  bottom: 120px;
+  left: 0;
+  width: 750px;
+}
+.bottom-nav {
+  position: fixed;
+  right: 0;
+  bottom: 0;
   left: 0;
   flex-direction: row;
   justify-content: space-around;
-  width:750px;
+  width: 750px;
   height: 120px;
-  background-color: #60B3F9;
+  background-color: #60b3f9;
 }
-.active{
-  background-color: #8FC5F8;
+.active {
+  background-color: #8fc5f8;
   transition: all 0.2s ease-in-out;
 }
-.nav{
+.nav {
   align-items: center;
   justify-content: center;
   width: 187.5px;
@@ -75,7 +75,7 @@ export default {
 }
 .title {
   margin-top: 10px;
-  color: #FFF;
+  color: #fff;
   font-size: 28px;
 }
 </style>

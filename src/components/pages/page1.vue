@@ -18,13 +18,13 @@ export default {
     tipsList
   },
   computed: {
-    'user': function () {
+    user: function () {
       return this.$store.default.getters.user
     },
-    'list': function () {
+    list: function () {
       return this.$store.default.getters.list
     },
-    'tips': function () {
+    tips: function () {
       return this.$store.default.getters.tips
     }
   },
