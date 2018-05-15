@@ -19,19 +19,23 @@ export default new Vuex.Store({
   },
   actions: {
     // 获取数据
-    getData: ({ commit }, state) => commit('getData', state)
+    getData: ({
+      commit
+    }, state) => {
+      api.get('/userInfo', (res) => {
+        commit('getData', res)
+      })
+    }
   },
   mutations: {
-    getData: (state) => {
+    getData: (state, res) => {
       // 用户信息
-      api.get('/userInfo', (res) => {
-        if (res.ok) {
-          state.navList = res.data.navList
-          state.user = res.data.user
-          state.list = res.data.list
-          state.tips = res.data.tips
-        }
-      })
+      if (res.ok) {
+        state.navList = res.data.navList
+        state.user = res.data.user
+        state.list = res.data.list
+        state.tips = res.data.tips
+      }
     }
   }
 })
