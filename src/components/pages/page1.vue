@@ -29,7 +29,7 @@ export default {
     }
   },
   created () {
-    this.$store.default.commit('getData')
+    this.$store.default.dispatch('getData')
   }
 }
 </script>
