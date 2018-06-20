@@ -14,8 +14,21 @@
       "type": "pod",
       "name": "WeexNatGeolocation",
       "version": "1.0.1"
+    },
+    {
+      "type": "pod",
+      "name": "WeexNatCommunication",
+      "version": "1.0.0"
     }
   ],
   "web": [],
-  "android": []
+  "android": [
+    {
+      "type": "maven",
+      "groupId": "com.instapp.nat",
+      "name": "weex-plugin-communication",
+      "version": "1.0.1",
+      "dependency": "com.instapp.nat:weex-plugin-communication:1.0.1"
+    }
+  ]
 }
